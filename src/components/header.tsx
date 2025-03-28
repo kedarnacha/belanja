@@ -91,7 +91,7 @@ export default function Header() {
                       </button>
                     </Link>
                     <button 
-                      className="ml-2 py-1 px-3 text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200" 
+                      className="ml-2 py-2 px-3 text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200" 
                       onClick={handleLogout}
                     >
                       Logout
@@ -100,12 +100,12 @@ export default function Header() {
                 ) : (
                   <div className="flex items-center space-x-2">
                     <Link to="/login">
-                      <button className="py-1 px-3 text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                      <button className="py-2 px-3 text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200">
                         Login
                       </button>
                     </Link>
                     <Link to="/register">
-                      <button className="py-1 px-3 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+                      <button className="py-2 px-3 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
                         Register
                       </button>
                     </Link>
@@ -123,7 +123,7 @@ export default function Header() {
           ref={mobileMenuRef}
           className="fixed inset-y-0 left-0 w-[300px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out animate-slide-in-left"
         >
-          <div className="p-4 border-b">
+          <div className="p-6 border-b">
             <div className="flex items-center justify-between">
               <Link 
                 to="/" 
@@ -140,8 +140,8 @@ export default function Header() {
               </button>
             </div>
           </div>
-          <nav className="flex flex-col gap-4 p-4">
-            <div className="border-t my-4 pt-4">
+          <nav className="flex flex-col gap-4 p-4 bg-white">
+            <div className="my-4">
               {isLoggedIn ? (
                 <button 
                   className="w-full text-left py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200" 
